@@ -2,8 +2,9 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
+import ProductCard from './components/productcard';
 
-import Productcard from './components/productcard.jsx';
+
 
 function App() {
   const cards = Array.from({ length: 10 });
@@ -17,7 +18,7 @@ function App() {
   return (
     <div style={gridStyle}>
       {cards.map((_, index) => (
-        <Productcard key={index} />
+        <ProductCard key={index} />
       ))}
     </div>
   );
